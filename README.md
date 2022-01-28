@@ -12,7 +12,7 @@ Click [here](https://jotaroc.github.io/Work-Day-Scheduler/) to the deployed webs
 
 The following image is the sceenshot of web application's appearance:
 
-![screen shot of the website](./Assets/screenshot.png)
-
+![screen shot of the website](./assets/Image1.png)
+![screen shot of the website](./assets/Image2.png)
 ---
 Author:Xingzhi Chang
