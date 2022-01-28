@@ -6,10 +6,12 @@ function displayTime() {
     timeDisplayEl.text(Time);
 }
 
+
 $(document).ready(function() {
     $('.description').each(function () {
         // id_key is the key for getItem and setItem
         let id_Key = $(this).attr("id");
+        // Retrieve data from web server
         $(this).val(localStorage.getItem(id_Key));
     });
     
@@ -18,7 +20,8 @@ $(document).ready(function() {
         // parseInt turns string to number
         let currentTime = parseInt(moment().format('k'));
         let time_Block = parseInt($(this).text());
-    
+        
+        //  change textarea background color depending on current time
         if(time_Block < currentTime) {
             $(this).siblings(".description").addClass("past");
         } else if(time_Block > currentTime) {
@@ -29,7 +32,7 @@ $(document).ready(function() {
     });
 });
 
-// addEventListener("click",function)
+// each time click on the button, save data to web server
 $(".saveBtn").on("click",function() {
     $('.description').each(function () {
         let id_Key = $(this).attr("id");
